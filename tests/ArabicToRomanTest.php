@@ -95,4 +95,14 @@ class ArabicToRomanTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals("MCMXCIX", $this->convert->toRomanNumeral(1999));
     }
+
+    public function testItReturnsMXLVIWhenPassed1066()
+    {
+        $this->assertEquals("MLXVI", $this->convert->toRomanNumeral(1066));
+    }
+
+    public function testItReturnsMCMLXXXIXWhenPassed1989()
+    {
+        $this->assertEquals("MCMLXXXIX", $this->convert->toRomanNumeral(1989));
+    }
 }
