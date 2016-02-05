@@ -13,6 +13,9 @@ class ArabicToRoman
             } elseif ($number >= 10) {
                 $numeral .= "X";
                 $number -= 10;
+            } elseif ($number >= 9) {
+                $numeral .= "IX";
+                $number -= 9;
             } elseif ($number >= 5) {
                 $numeral .= "V";
                 $number -= 5;
