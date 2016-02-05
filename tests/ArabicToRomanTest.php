@@ -6,7 +6,7 @@ class ArabicToRomanTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->convert = new ArabicToRoman();
+        $this->convert = new ConvertNumberType();
     }
 
     public function testItReturnIWhenPassed1()

@@ -1,7 +1,14 @@
 <?php
 
-class ArabicToRoman
+class ConvertNumberType
 {
+    /**
+     * Convert an arabic number to roman numeral
+     *
+     * @param $number
+     *
+     * @return string
+     */
     public function toRomanNumeral($number)
     {
         $numeral = '';
