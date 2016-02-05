@@ -75,4 +75,24 @@ class ArabicToRomanTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals("L", $this->convert->toRomanNumeral(50));
     }
+
+    public function testItReturnsCWhenPassed100()
+    {
+        $this->assertEquals("C", $this->convert->toRomanNumeral(100));
+    }
+
+    public function testItReturnsDWhenPassed500()
+    {
+        $this->assertEquals("D", $this->convert->toRomanNumeral(500));
+    }
+
+    public function testItReturnsMWhenPassed1000()
+    {
+        $this->assertEquals("M", $this->convert->toRomanNumeral(1000));
+    }
+
+    public function testItReturnsMCMXCIXWhenPassed1999()
+    {
+        $this->assertEquals("MCMXCIX", $this->convert->toRomanNumeral(1999));
+    }
 }
