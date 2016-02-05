@@ -6,9 +6,15 @@ class ArabicToRoman
     {
         $numeral = '';
 
-        if ($number >= 5) {
-            $numeral .= "V";
-            $number -= 5;
+        while ($number >= 5) {
+            if ($number >= 10) {
+                $numeral .= "X";
+                $number -= 10;
+            } else {
+                $numeral .= "V";
+                $number -= 5;
+            }
+
         }
 
         $numeral .= str_repeat("I", $number);
