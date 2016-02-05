@@ -4,6 +4,12 @@ class ArabicToRoman
 {
     public function toRomanNumeral($number)
     {
-        return str_repeat("I", $number);
+        if ($number >= 5 && $number %5 <= 3) {
+            return "V" . str_repeat("I", $number %5);
+        }
+
+        $numeral =  str_repeat("I", $number);
+
+        return $numeral;
     }
 }
