@@ -23,4 +23,9 @@ class ArabicToRomanTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals("III", $this->convert->toRomanNumeral(3));
     }
+
+//    public function testItReturnsIVWhenPassed4()
+//    {
+//        $this->assertEquals("IV", $this->convert->toRomanNumeral(4));
+//    }
 }
