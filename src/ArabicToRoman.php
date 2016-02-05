@@ -6,16 +6,19 @@ class ArabicToRoman
     {
         $numeral = '';
 
-        while ($number >= 5) {
+        while ($number >= 4) {
             if ($number >= 50) {
                 $numeral .= "L";
                 $number -= 50;
             } elseif ($number >= 10) {
                 $numeral .= "X";
                 $number -= 10;
-            } else {
+            } elseif ($number >= 5) {
                 $numeral .= "V";
                 $number -= 5;
+            } elseif ($number >= 4) {
+                $numeral .= "IV";
+                $number -= 4;
             }
         }
 
