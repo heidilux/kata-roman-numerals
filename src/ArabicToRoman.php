@@ -11,7 +11,8 @@ class ArabicToRoman
             10  => "X",
             9   => "IX",
             5   => "V",
-            4   => "IV"
+            4   => "IV",
+            1   => "I"
         ];
 
         foreach ($specialCases as $input => $output) {
@@ -21,7 +22,6 @@ class ArabicToRoman
             }
         }
 
-        $numeral .= str_repeat("I", $number);
         return $numeral;
     }
 }
