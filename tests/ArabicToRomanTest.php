@@ -49,7 +49,10 @@ class ArabicToRomanTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("VIII", $this->convert->toRomanNumeral(8));
     }
 
-//    S
+//    public function testItReturnsIXWhenPassed9()
+//    {
+//        $this->assertEquals("IX", $this->convert->toRomanNumeral(9));
+//    }
 
     public function testItReturnsXWhenPassed10()
     {
@@ -61,5 +64,15 @@ class ArabicToRomanTest extends PHPUnit_Framework_TestCase
         $this->assertEquals("XI", $this->convert->toRomanNumeral(11));
         $this->assertEquals("XII", $this->convert->toRomanNumeral(12));
         $this->assertEquals("XIII", $this->convert->toRomanNumeral(13));
+    }
+
+    public function testItReturnsXXWhenPassed20()
+    {
+        $this->assertEquals("XX", $this->convert->toRomanNumeral(20));
+    }
+
+    public function testItReturnsLWhenPassed50()
+    {
+        $this->assertEquals("L", $this->convert->toRomanNumeral(50));
     }
 }
